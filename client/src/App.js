@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <input type="text" placeholder="Name" name="name" onChange={this.handleChange}/>
         <input type="number" placeholder="Receipt ID" name="receiptId"    onChange={this.handleChange}/>
-        <input type="number" placeholder="Price 1" name="price1" onChange={this.handleChange}/>
+        <input type="number" placeholder="Price 3" name="price3" onChange={this.handleChange}/>
         <input type="number" placeholder="Price 2" name="price2" onChange={this.handleChange}/>
         <button onClick={this.createAndDownloadPdf}>Download PDF</button>
       </div>
