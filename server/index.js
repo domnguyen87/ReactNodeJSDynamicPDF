@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/create-pdf', (req, res) => {
-    pdf.create(pdfTemplate(req.body), {}).toFile('rezultati.pdf', (err) => {
+    pdf.create(pdfTemplate(req.body), {}).toFile('dsa.pdf', (err) => {
       if(err) {
           return console.log('error');
       }
@@ -22,7 +22,7 @@ app.post('/create-pdf', (req, res) => {
   })
 
   app.get('/fetch-pdf', (req, res) => {
-    res.sendFile(`${__dirname}/rezultati.pdf`);
+    res.sendFile(`${__dirname}/dsa.pdf`);
   });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
