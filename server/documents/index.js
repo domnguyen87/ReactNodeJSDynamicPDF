@@ -115,7 +115,7 @@ return `
                 </tr>
                 <tr class="item">
                    <td>First item:</td>
-                   <td>${price1}$</td>
+                   <td>${price3}$</td>
                 </tr>
                 <tr class="item">
                    <td>Second item:</td>
